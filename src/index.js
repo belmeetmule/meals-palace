@@ -1,5 +1,5 @@
-export default function foo(){
-    return 3;
+export default function foo() {
+  return 3;
 }
 
-//module.exports = foo;
+// module.exports = foo;
