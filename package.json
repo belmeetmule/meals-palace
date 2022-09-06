@@ -1,0 +1,42 @@
+{
+  "name": "meals-palace",
+  "version": "1.0.0",
+  "description": "it is the first group capstone project !!",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belmeetmule/meals-palace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belmeetmule/meals-palace/issues"
+  },
+  "homepage": "https://github.com/belmeetmule/meals-palace#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "@vue/eslint-config-typescript": "^11.0.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.0.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^7.1.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.0.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.1"
+  }
+}

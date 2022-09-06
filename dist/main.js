@@ -1,0 +1,1 @@
+(self.webpackChunkmeals_palace=self.webpackChunkmeals_palace||[]).push([[179],{138:()=>{}},a=>{a(a.s=138)}]);
