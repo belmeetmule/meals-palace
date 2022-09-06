@@ -1,0 +1,28 @@
+{
+  "name": "meals-palace",
+  "version": "1.0.0",
+  "description": "it is the first group capstone project !!",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belmeetmule/meals-palace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belmeetmule/meals-palace/issues"
+  },
+  "homepage": "https://github.com/belmeetmule/meals-palace#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.1"
+  }
+}
