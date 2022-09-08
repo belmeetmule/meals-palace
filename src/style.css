@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -44,32 +44,52 @@ button.comment {
 }
 
 ul.menu,
-ul.main-display {
+ul.main-display{
   list-style: none;
 }
 
-ul.menu {
+ul.menu{
   display: flex;
-  gap: 30px;
+  gap: 10px;
   justify-content: center;
 }
 
-.score-list li {
-  height: 35px;
-  padding: 10px;
+li.meal img {
+  max-width: 275px;
+  border-radius: 10px;
+}
+
+.meal-wrapper{
+  
   display: flex;
-  gap: 15px;
   align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-grow: 1;
+  max-width: 275px;
 }
 
-.meal-wrapper {
-  display: flex;
-  gap: 5px;
+p.meal-name{
+  flex:1;
 }
 
-.likes-wrapper {
+.likes-wrapper{
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.likes-wrapper img{
+  width: 30px;
+}
+
+p.meal-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.fa-heart:hover{  
+  color: red;
 }
 
 header {
@@ -91,3 +111,31 @@ footer {
   text-align: center;
   width: 100%;
 }
+
+@media only screen and (min-width: 768px) {
+  .main-display{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 30%;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .main-display li.meal{
+    width: 30%;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  button.submit {
+    margin-left: 0%;
+    float: right;
+    transform: translate(0%);
+  }
+}
+
