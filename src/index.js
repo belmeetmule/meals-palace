@@ -1,3 +1,1 @@
-export default function foo() {
-  return 3;
-}
+import './style.css';
