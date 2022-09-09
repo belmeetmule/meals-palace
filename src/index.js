@@ -1,5 +1,5 @@
-import {fetchData, getData, sendData} from './modules/apis.js';
-import UI from './modules/UI.js'
+import { fetchData, getData, sendData } from './modules/apis.js';
+import UI from './modules/UI.js';
 import Meal from './modules/meal.js';
 import MealList from './modules/MealList.js';
 import './style.css';
@@ -13,28 +13,25 @@ const INV_API_BASE = 'https://us-central1-involvement-api.cloudfunctions.net/'
 const INV_API_KEY = 'T9ojq4zOnjo8oVysI3BL';
 const LIKES_ENDPOINT = '/likes';
 const COMMENT_ENDPOINT = '/comments';
-let myMealList= new MealList();
-
+const myMealList = new MealList();
 
 // get all the like buttons
 const likeButtons = document.querySelectorAll('.likes-count');
-  likeButtons.forEach((likeBtn) => {
-    const foodId = likeBtn.parentElement.parentElement.parentElement.id;
-    likeBtn.addEventListener('click', () => {
-     //code to handle like
-    });
+likeButtons.forEach((likeBtn) => {
+  const foodId = likeBtn.parentElement.parentElement.parentElement.id;
+  likeBtn.addEventListener('click', () => {
+    // code to handle like
   });
-
+});
 
 window.addEventListener('load', () => {
   const fetchedData = fetchData(ALL_FOOD_API_URL);
- 
+
   fetchedData.then((meals) => {
     const sortedList = meals;
-  
-    let tempList= myMealList.addMeals(meals)
-   
-   UI.populateMeal(Array.from(tempList));
-   
+
+    const tempList = myMealList.addMeals(meals);
+
+    UI.populateMeal(Array.from(tempList));
   });
 });
