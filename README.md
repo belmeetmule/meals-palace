@@ -14,7 +14,7 @@ The meals-palace provides a web application displaying a list of foods along wit
 
 ## Live Demo 
 
-[Live Demo Link](https://youtu.be/3n6VZYeCeAs)
+[Video Presentation](https://youtu.be/3n6VZYeCeAs)
 
 
 

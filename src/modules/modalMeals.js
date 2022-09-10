@@ -5,7 +5,7 @@ const modalDetailsContent = document.querySelector(".modal-details-content");
 const url ="https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/";
 const key = "ZbL3vMDmBGqIrLmuwzny";
 
-function mealsFunction(meal) {
+const mealsFunction = (meal) => {
   const {
     strMeal,
     strMealThumb,
@@ -15,7 +15,7 @@ function mealsFunction(meal) {
     strMeasure1,
     idMeal,
   } = meal[0];
-  // meal = meal[0];
+
   const html = `
         <div class="modal-meal-img">
               <img src="${strMealThumb}" alt="" />

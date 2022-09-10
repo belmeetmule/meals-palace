@@ -5,12 +5,11 @@ import { getLikes } from "./userinvolve.js";
 import mealsCounter from './mealCount.js';
 
 const foodItemsDiv = document.getElementById('food-items');
-// const usrlikes = document.getElementById('likes');
 
 // event listeners
 foodItemsDiv.addEventListener('click', getMealInfo);
 
-const foodsUI = () => {
+const foodsUI = async () => {
   fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=g')
     .then((res) => res.json())
     .then((data) => {
