@@ -1,7 +1,6 @@
 /* eslint-disable */
 import foodsUI from "./foodsUI.js";
 
-/* eslint-enable */
 
 const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
 const key = '4ZfW9Nw9KyQJZ8SztYPH';
@@ -17,7 +16,7 @@ const addLike = async (id) => {
   const headers = { 'Content-type': 'application/json; charset=UTF-8' };
   /* eslint-disable */
   const result = await fetch(`${url}${key}/likes`, {
-    /* eslint-enable */
+
     method: 'POST',
     body,
     headers,

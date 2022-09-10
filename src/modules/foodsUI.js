@@ -1,7 +1,7 @@
 /* eslint-disable */
 import getMealInfo from "./getMeals.js";
 import { getLikes } from "./userinvolve.js";
-/* eslint-enable */
+
 import mealsCounter from './mealCount.js';
 
 const foodItemsDiv = document.getElementById('food-items');
