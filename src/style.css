@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(175, 167, 160);
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 2.1rem;
+  margin-top: 5px;
+  justify-self: center;
+}
+
+.meal {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 1rem;
+}
+
+.meal-item {
+  border-radius: 1rem;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  margin: 1rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.meal-item:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+}
+
+.meal-img img {
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin-top: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+}
+
+.meal-name {
+  padding: 1rem 0.5rem;
+  color: orange;
+}
+
+.meal-name p {
+  font-size: 1rem;
+}
+
+.fa-heart {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  color: red;
+}
+
+.involvement p {
+  margin-top: 7px;
+}
+
+.comment-btn {
+  background-color: rgb(165, 84, 13);
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.comment-btn:hover {
+  background-color: rgb(233, 131, 42);
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  border: none;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+footer {
+  background-color: rgb(165, 84, 13);
+  height: 70px;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Modal */
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: #3e7fa8;
+  border-radius: 1rem;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  display: none;
+  padding: 2rem 0;
+}
+
+.modal-details::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal-details::-webkit-scrollbar-thumb {
+  background: #f0f0f0;
+  border-radius: 2rem;
+}
+
+/* js related */
+.displayModal {
+  display: block;
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 1.8rem;
+  background: #fff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.modal-close-btn:hover {
+  color: red;
+}
+
+.modal-title {
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#commentTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-meal-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 7rem;
+}
+
+#commentsDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.comentInfo {
+  display: flex;
+  margin: 0.25rem 0;
+}
+
+#plusComment {
+  text-align: center;
+  margin: 1rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#username {
+  width: 15rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#comment {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#submit-comment {
+  color: rgb(233, 131, 42);
+  background-color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  background-color: rgb(233, 131, 42);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .meal {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
