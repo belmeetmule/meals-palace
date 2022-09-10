@@ -12,7 +12,6 @@ recipeCloseBtn.addEventListener('click', () => {
 function getMealInfo(e) {
   e.preventDefault();
 
-  
   if (/like-/.test(e.target.id)) {
     const { id } = e.target;
     const foodNum = id.match(/\d+$/)[0];
